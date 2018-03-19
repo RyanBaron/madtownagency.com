@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e98e6783cc0a1cad77fb1208be561e8b",
-    "content-hash": "fed67b7d93e334ea4edb62c38bfee59a",
+    "hash": "d2af0bb3d17eb60850f7ea8ca02c5dd8",
+    "content-hash": "b75defcfe863e39044d16b4fe072e21b",
     "packages": [
         {
             "name": "composer/installers",
@@ -256,6 +256,39 @@
             "time": "2018-01-29 14:49:29"
         },
         {
+            "name": "madtownagency/mta-resources",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:RyanBaron/mta-resources.git",
+                "reference": "8f30c9b3f1515f04b2d238273a4013dddfa83a80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RyanBaron/mta-resources/zipball/8f30c9b3f1515f04b2d238273a4013dddfa83a80",
+                "reference": "8f30c9b3f1515f04b2d238273a4013dddfa83a80",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.4",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Ryan Baron",
+                    "email": "ryan@madtownagency.com",
+                    "homepage": "https://www.madtownagency.com"
+                }
+            ],
+            "description": "Custom plugin for Madtown Agency resources.",
+            "support": {
+                "source": "https://github.com/RyanBaron/mta-resources/tree/v1.0.1",
+                "issues": "https://github.com/RyanBaron/mta-resources/issues"
+            },
+            "time": "2018-03-17 23:56:37"
+        },
+        {
             "name": "oscarotero/env",
             "version": "v1.1.0",
             "source": {
@@ -453,16 +486,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d7c00c3000ac0ce79c96fcbfef86b49a71158cd1"
+                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7c00c3000ac0ce79c96fcbfef86b49a71158cd1",
-                "reference": "d7c00c3000ac0ce79c96fcbfef86b49a71158cd1",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4842476c434e375f9d3182ff7b89059583aa8b27",
+                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +505,7 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
             "bin": [
                 "bin/phpcs",
@@ -500,12 +533,14 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-12-19 21:44:46"
+            "time": "2018-02-20 21:35:23"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "madtownagency/mta-resources": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

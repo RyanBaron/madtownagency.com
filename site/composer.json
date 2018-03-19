@@ -30,6 +30,15 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RyanBaron/mta-resources.git",
+      "options": {
+        "ssh2": {
+          "username": "RyanBaron"
+        }
+      }
     }
   ],
   "require": {
@@ -39,7 +48,8 @@
     "johnpbloch/wordpress": "4.9.4",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "roots/soil": "^3.7"
+    "roots/soil": "^3.7",
+    "madtownagency/mta-resources": "dev-master#v1.0.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
