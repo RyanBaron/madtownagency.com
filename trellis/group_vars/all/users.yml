@@ -9,13 +9,13 @@ users:
       - "{{ web_group }}"
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-      - "{{ lookup('file', '~/.ssh/madtown.pem') }}"
       - https://github.com/RyanBaron.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
-      - "{{ lookup('file', '~/.ssh/madtown.pem') }}"
+      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      #- "{{ lookup('file', '~/.ssh/madtown.pem') }}"
       - https://github.com/RyanBaron.keys
   #- name: "{{ aws_user }}"
   #  groups:
