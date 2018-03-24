@@ -112,6 +112,14 @@ Vagrant.configure('2') do |config|
 
   config.vm.provision provisioner do |ansible|
     if local_provisioning?
+
+      # Ryan - update 3-23-2018
+      # Add the AWS pem key file and set the permissions
+      config.vm.provision "file",
+        source: "/Users/ryanj/.ssh/madtown.pem",
+        destination: "~/.ssh/madtown.pem"
+      config.vm.provision "shell", inline: "chmod 600 /home/vagrant/.ssh/madtown.pem"
+
       ansible.install_mode = 'pip'
       ansible.provisioning_path = provisioning_path
       ansible.version = vconfig.fetch('vagrant_ansible_version')
